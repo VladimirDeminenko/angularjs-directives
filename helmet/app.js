@@ -29,7 +29,7 @@
     function Helmet() {
         return {
             scope: {
-                helmetColor: '@color'
+                color: '@'
             },
             templateUrl: IMAGE_URL
         };
