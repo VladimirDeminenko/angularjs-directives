@@ -2,7 +2,7 @@
     'use strict';
 
     const APP_NAME = 'Learning AngularJS Directives> Helmet';
-    const HTMP_URL = './templates/hello-world.html';
+    const HTML_URL = './templates/hello-world.html';
     const IMAGE_URL = './images/helmet.svg';
 
     angular.module('UserDirectivesApp', [])
@@ -17,7 +17,7 @@
 
     function HelloWorld() {
         return {
-            templateUrl: HTMP_URL
+            templateUrl: HTML_URL
         };
     }
 
