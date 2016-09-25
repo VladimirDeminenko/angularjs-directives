@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    const APP_NAME = 'Learning AngularJS Directives: Helmet';
+    const APP_NAME = 'Learning AngularJS Directives> Helmet';
     const HTMP_URL = './templates/hello-world.html';
     const IMAGE_URL = './images/helmet.svg';
 
