@@ -10,13 +10,14 @@
 <body>
 <div class="container">
     <h3>{{appName}}</h3>
-    <ol>
+    <ul>
         <div class="row">
-            <li class="col-xs-4" ng-repeat="i in [1, 2, 3]">
-                <hello-world></hello-world>
+            <li class="col-xs-3" ng-repeat="color in ['red', 'blue', 'green', 'magenta']">
+                <hello-world application-name="{{$index + 1}}. Hello World!"></hello-world>
+                <helmet color="{{color}}"></helmet>
             </li>
         </div>
-    </ol>
+    </ul>
 </div>
 </body>
 </html>
