@@ -12,9 +12,11 @@
     <h3>{{appName}}</h3>
     <ul>
         <div class="row">
-            <li class="col-xs-3" ng-repeat="color in ['red', 'blue', 'green', 'magenta']">
-                <hello-world application-name="{{$index + 1}}. Hello World!"></hello-world>
-                <helmet color="{{color}}"></helmet>
+            <li class="col-xs-3" ng-repeat="pilot in [
+            {color: 'gold', name: 'Ann'}, {color: 'green', name: 'Phil'},
+            {color: 'red', name: 'Samuel'}, {color: '', name: 'Bob'}]">
+                <hello-world application-name="{{$index + 1}}.{{pilot.name}}"></hello-world>
+                <helmet color="{{pilot.color}}"></helmet>
             </li>
         </div>
     </ul>
