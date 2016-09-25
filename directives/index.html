@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="UserDirectivesApp" ng-controller="MainController">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="./app.js"></script>
+    <title>{{appName}}</title>
+</head>
+<body>
+<div class="container">
+    <h1>{{appName}}</h1>
+    <ol>
+        <div class="row">
+            <li class="col-xs-4" ng-repeat="i in [1, 2, 3]">
+                <hello-world></hello-world>
+            </li>
+        </div>
+    </ol>
+</div>
+</body>
+</html>
